@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" >
+		<title>Graduation Project</title>
+		<script type="text/javascript" src= "js/main.js"></script>
+		<script type="text/javascript" src= "js/Calculator.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		
+		</head>
+		
+			<script type="text/javascript">
+		    //Main Function
+			calculate();
+			</script>
+			 
+	<body>
+		<form id="clear" >
+			<h3>Reverse Mortgage Engine</h3>
+			<label >Age </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input id="age" value="" type="text" placeholder="Age 62 and up" autofocus
+			title="Required Field"/><br/><br/>
+
+			<label >Third Party Cost</label> &nbsp&nbsp;
+			<input id="cost" value="0" type="text" required/>
+			<br/><br/>
+
+			<label >Value</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input id="value" value="" type="text" />
+			<br/><br/>
+		
+			<label >Existing Mortgage</label>&nbsp;
+			<input id="existing" value="" type="text"  />
+			<br /><br />
+				<input id="bia" type="button" onclick= "calculate()"  value="Calculate">
+			<input type="reset" value="clear"> 
+			
+			<table id="table">
+		   	<tr><td>Expected Rate</td><td>Max Benefit-Floor</td></tr>
+		   	<tr><td>Monthly Servicing</td><td>0</td></tr>
+		   	<tr><td>Lending Limit</td><td>$625500.00</td></tr>
+		   	
+		   	<tr><td>Max Claim Amount</td> <td id="max"> </td> </tr>
+		   	<tr  placeholder="Answer: $" autofocus> 
+		    	<td>Mandatory Obligation</td><td id="ob"> </td>
+		    	 </tr><br/>
+		   	<tr  placeholder="Answer: $" autofocus> 
+		    	<td>Principle Limit</td><td id="PPlace"> </td>
+		    	 </tr><br/>
+		    <tr  placeholder="Answer: $" autofocus> 
+		    	<td>Mortgage Insurance MIP </td><td id="mipPlace"> </td>
+		    	</tr><br/>
+		   	<tr  placeholder="Answer: $" autofocus> 
+		   	<td>Total $ Qualifying</td> <td id="place"> </td>
+		   	</tr>
+		   	<tr  placeholder="Answer: $" autofocus> 
+		   	<td>Cash at Closing</td> <td id="foo"> </td></tr>
+		
+		   	<tr  placeholder="Answer: $" autofocus> 
+		   	<td>Line of Credit (2nd year)</td> <td id="bar"> </td> </tr>
+   	
+		 </table>
+		</form>
+	</body>
+</html>
